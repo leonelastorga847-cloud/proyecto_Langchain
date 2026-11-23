@@ -1,0 +1,28 @@
+{
+  "ahora": "2025-11-18T14:00:00",
+  "horario": { "apertura": "13:00", "ultima_orden": "21:15", "cierre": "21:30" },
+  "menu": {
+    "taco_pastor":  { "nombre": "Tacos al pastor",  "precio": 25, "dias": null },
+    "taco_lengua":  { "nombre": "Tacos de lengua",  "precio": 35, "dias": null },
+    "quesadilla":   { "nombre": "Quesadilla",       "precio": 45, "dias": null },
+    "agua_horchata":{ "nombre": "Agua de horchata", "precio": 30, "dias": null },
+    "pozole":       { "nombre": "Pozole",           "precio": 95, "dias": ["jueves"] },
+    "menudo":       { "nombre": "Menudo",           "precio": 90, "dias": ["sábado", "domingo"] }
+  },
+  "inventario": {
+    "taco_pastor": 40, "taco_lengua": 3, "quesadilla": 15,
+    "agua_horchata": 20, "pozole": 12, "menudo": 10
+  },
+  "clientes": {
+    "C001": { "nombre": "Ana",   "saldo": 100 },
+    "C002": { "nombre": "Luis",  "saldo": 500 },
+    "C003": { "nombre": "Marta", "saldo": 0 }
+  },
+  "pedidos": {
+    "P001": {
+      "cliente_id": "C002", "estado": "activo",
+      "items": [{ "platillo_id": "taco_pastor", "cantidad": 4 }],
+      "total": 100, "pagado_saldo": 100, "pagado_efectivo": 0
+    }
+  }
+}
